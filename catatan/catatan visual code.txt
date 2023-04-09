@@ -1,0 +1,23 @@
+ git init
+untuk menginisiasi folder repositori
+
+
+ git remote add origin https://github.com/codelatihan/latihan-js
+meremote link reposisi pada github 
+ 
+
+ git add
+menambah file progam
+
+
+ git commit -m "pertemuan 1"
+utuk deskripsi pada repository github
+
+
+ git branch  -M main
+untuk merubah cabang master menjadi main
+
+
+
+ git push   -u origin main
+untuk memasukkan code progam ke github

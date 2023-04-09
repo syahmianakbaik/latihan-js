@@ -1,0 +1,55 @@
+<html>  
+    <head>
+        <title>Belajar JS</title>
+    </head> 
+
+    <body>
+        <h2>lbih mengenal saya " </h2>
+        <p id="aic"></p>
+    </body>
+
+    <script>
+       var jawaban = prompt("siapa saya ")
+        var hadiah ="";
+        
+        switch(jawaban){
+            case "zanss":
+                hadiah = "temen online?";
+            break;
+            case "fauzan ":
+                hadiah= "temen smp sma";
+            break;
+            case"syahmi":
+            hadiah = "temen sd";
+            break;
+
+            default:document.write("anda salah ")
+        }
+
+        if (hadiah ===""){
+            document.write("<h3> lu siapa monyet</h3>")
+        }else{
+            document.write("<h3> lu adalah </h3>" + hadiah)
+        }
+
+
+
+       /* let year = prompt('Tahun berapa sekarang ?')
+        if (year == 2022) alert ("selamat anda benar !") 
+        else {jawaban = ("you wrong ;")}
+        document.getElementById("aic").innerHTML = jawaban     
+
+
+
+         const jam = new Date().getHours();
+         let waktu;
+
+        if(jam < 12){
+            waktu = "selamat pagi";}
+        else{
+            waktu = "selamat siang";}
+
+        document.getElementById("aic").innerHTML = 
+        "waktu sekarang: " + waktu; */        
+    </script>
+</html>

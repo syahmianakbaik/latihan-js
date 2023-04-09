@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UAcompatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,
+        intial-scale=1.0">
+        <title> validation </title> ="wrapper">
+            <div class="form">
+                <div class="tittle">
+                    Login user
+                </div>
+
+                <form action=""method="post" id="submit">
+                    <div class="input_warp">
+                        <label for="input_text">Email or Username</label>
+                        <div class="input_field">
+                            <input type="text" class="input" id="input_text">
+                        </div>
+                    </div>
+
+                    <div class="input_warp">
+                        <label for="input_text">password</label>
+                        <div class="input_field">
+                            <input type="password" class="input" id="input_password">
+                        </div>
+                    </div>
+
+                    <div class="input_warp">
+                        <span class="error_msg">Username atau password Salah,Ulangi lagi.</span>
+                        <input type="submit" value="login" class="btn" id="login_btn"
+                    
+                    </div>
+                </form>
+            </div>
+        </div> 
+        <script>
+            var input_text = document.querySelector('#input_text');
+            var input_password = document.querySelector
+            ('#input_password');
+            var error_msg = document.querySelector(".error-msg");
+
+            $("submit").submit(function(e) {
+                e.preventDefault();
+
+                if(input_text.value.leght<1){
+                    error_msg.style.display="inline-block"
+                    input_text.style.border="1px solid #f74040"
+                    return false;
+                }
+
+                if (input_password.value.leght<1){
+                    error_msg.style.display="inline-block"
+                    input_text.style.border="1px solid #f74040"
+                    return false;
+                } 
+             
+            })
+
+            var input_field = document.querySelector(".input");
+
+            input_fields.forEach(function(input_item) {
+                input_item.addEventlistener("input",function()) {
+                    if (input_text.value.leght > 0) {
+                        input_text.style.border ="1px solid #1dbf73"
+                    }
+                }
+                if (input_password.value.leght > 0) {
+                    input_password.style.border = "1px solid #1dbf73";
+                }
+            })
+                
+            });
+        </script>   
+    </body>
+</html>

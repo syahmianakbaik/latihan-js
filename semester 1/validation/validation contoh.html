@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Homepage | AIC </title>
+        <link type="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p></p>
+    </body>
+
+<script language="javascript">
+    
+    function pasuser(form) {
+    if (form.id.value=="admin") { 
+    if (form.pass.value=="sukses889") {              
+    location="admin.html" 
+    } else {
+    alert("Invalid Password")
+    }
+    } else {  alert("Invalid Username")
+    }
+    }
+    </script>
+
+    <center>
+    <h1>Silakan login terlebih dahulu, untuk mengakses dahsboard</h1>
+    <table bgcolor="white" cellpadding="8" border="2">
+    <tr><td colspan="2">
+        <center><h1><b>Login
+    Area</b></h1>
+</center></td></tr>
+    <tr><td><h1><b>Username:</b></h1></td><td><form name="login"><input
+    name="id" type="text"></td></tr>
+    <tr><td><h1><b>Password:</b></h1></td><td><input name="pass"
+    type="password"></td></tr>
+    <tr><td><center><input type="button" value="Login"
+    onClick="pasuser(this.form)"></center></td><td><center><br><input
+    type="Reset">
+</form>
+</td>
+</tr>
+</table>
+<h3>Deskripsi login</h3>
+<span>
+    <span>Username: admin</span>
+    <br />
+    <span>Password: sukses889</span>
+</span>
+</center> 
+</html>

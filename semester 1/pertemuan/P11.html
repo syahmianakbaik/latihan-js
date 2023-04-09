@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Sedang belajar this keyword JS</title>
+    </head>
+    <body>
+        <p id="aic"></p>
+    </body>
+    <script>
+        const identitas ={
+            nama_depan: "Fauzan",
+            nama_belakang: "Syahmi",
+            nis: 12290,
+            nama_lengkap: function () {
+                return this.nama_depan + " " + this.nama_belakang
+            }
+        }
+        document.getElementById("aic").innerHTML = identitas.nama_lengkap();
+    </script>
+</html>

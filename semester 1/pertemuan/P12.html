@@ -1,0 +1,39 @@
+<html>
+
+<body>
+	
+	<h3>
+		Menampilkan data dari item mata kuliah
+    </h3>
+	<hr />
+	<p class="aic"></p>
+	
+	<button onclick="loopArray()">
+		Jalankan Program
+	</button>
+
+	<button onclick="HapusArray()">
+		Hapus Data Array
+	</button> 
+	
+	<script>
+
+list = ["Design Grafis", "Programming", "Networking", "Linux", "Entreprenur"];
+		function HapusArray() {
+        	delete list[2];
+			document.querySelector('.aic').innerHTML
+			}	
+
+		function loopArray() {			
+			list.forEach(element => {
+				document.querySelector('.aic').innerHTML
+						+= '<br>' + element ;
+			});
+			
+		}
+
+	</script>
+</body>
+
+</html>					
+    
